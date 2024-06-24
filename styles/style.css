@@ -1,0 +1,450 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 80px;
+  max-height: 100vh;
+}
+
+.info {
+  align-self: center;
+  padding-left: 86px;
+}
+
+.info__title {
+  margin-bottom: 24px;
+
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 62px;
+  letter-spacing: -0.02em;
+}
+
+.info__description {
+  margin-bottom: 38px;
+
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+
+.info__buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  max-width: 420px;
+}
+
+.info__button {
+  position: relative;
+  padding: 15px 24px 15px 54px;
+  box-sizing: border-box;
+  border-radius: 28px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+
+  cursor: pointer;
+  color: #10100E;
+  
+}
+
+.info__button::before {
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: 12px;
+
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+
+  opacity: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.info__button--doctor {
+  background-color: #5A58CF26;
+}
+
+.info__button--doctor::before {
+  background-image: url('../img/doctor-icon.png');
+  background-color: #5A58CF;
+}
+
+.info__button--coach {
+  background-color: #408BFC26;
+}
+
+.info__button--coach::before {
+  background-image: url('../img/coach-icon.png');
+  background-color: #408BFC;
+}
+
+.info__button--app {
+  background-color: #4F625826;
+}
+
+.info__button--app::before {
+  background-image: url('../img/app-icon.png');
+  background-color: #4F6258;
+}
+
+.info__button--medication {
+  background-color: #F9D27026;
+}
+
+.info__button--medication::before {
+  background-image: url('../img/madication-icon.png');
+  background-color: #F9D270;
+}
+
+.info__button--community {
+  background-color: #FBCACA4D;
+}
+
+.info__button--community::before {
+  background-image: url('../img/community-icon.png');
+  background-color: #FBDECA;
+}
+
+.info__button--disabled {
+  color: #10100E80;
+  background-color: #F6F6F6;
+}
+
+.info__button--disabled::before {
+  opacity: 0.5;
+}
+
+.body {
+  height: 100vh;
+  padding: 150px 30px 100px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  background-size: 100% 100%;
+}
+
+.body--doctor {
+  background-image: url('../img/river-shape-doctor.webp');
+}
+
+.body--coach {
+  background-image: url('../img/river-shape-coach.webp');
+}
+
+.body--app {
+  background-image: url('../img/river-shape-app.webp');
+}
+
+.body--medication {
+  background-image: url('../img/river-shape-medication.webp');
+}
+
+.body--community {
+  background-image: url('../img/river-shape-communiti.webp');
+}
+
+.body__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.body__card {
+  max-width: 480px;
+  box-sizing: border-box;
+  padding: 48px 40px;
+  border: 1px solid #5A58CF;
+  border-radius: 10px;
+  box-shadow: 0px 20px 40px 0px #2F2F2F33;
+  background-color: #FFFFFF;
+}
+
+.body__card-title {
+  position: relative;
+  margin-bottom: 24px;
+  padding-left: 43px;
+
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 41px;
+
+  color: #10100E;
+}
+
+.body__card-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  height: 41px;
+  width: 41px;
+
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.body__card-title--doctor::before {
+  background-image: url('../img/card-doctor-icon.svg');
+}
+
+.body__card-title--coach::before {
+  background-image: url('../img/card-coach-icon.svg');
+}
+
+.body__card-title--app::before {
+  background-image: url('../img/card-app-icon.svg');
+}
+
+.body__card-title--medication::before {
+  background-image: url('../img/card-medication-icon.svg');
+}
+
+.body__card-title--community::before {
+  background-image: url('../img/card-community-icon.svg');
+}
+
+.medication-subtitle {
+  margin-bottom: 24px;
+
+  font-size: 18px;
+  line-height: 31px;
+
+  color: #10100E;
+}
+
+.medication-buttons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.medication-button {
+  position: relative;
+  flex-grow: 1;
+  padding: 12px 31px 12px 12px;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  text-align: center;
+
+  border-radius: 12px;
+  color: #10100E;
+  background-color: #FDF4DB;
+  cursor: pointer;
+}
+
+.medication-button::after {
+  content: '';
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  width: 11px;
+  height: 11px;
+
+  background-image: url('../img/info-icon.svg');
+  transform: translateY(-50%);
+}
+
+.body__card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  margin-bottom: 40px;
+}
+
+.body__card-list-item {
+  position: relative;
+  padding-left: 34px;
+
+  font-size: 18px;
+  line-height: 26px;
+
+  color: #000000;
+}
+
+.body__card-list-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 26px;
+  height: 26px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.body__card-list-item--doctor::before {
+  background-image: url('../img/list-icon-doctor.svg');
+}
+
+.body__card-list-item--coach::before {
+  background-image: url('../img/list-icon-coach.svg');
+}
+
+.body__card-list-item--app::before {
+  background-image: url('../img/list-icon-app.svg');
+}
+
+.body__card-list-item--medication::before {
+  background-image: url('../img/list-icon-medication.svg');
+}
+
+.body__card-list-item--community::before {
+  background-image: url('../img/list-icon-community.svg');
+}
+
+.body__card-button {
+  width: 100%;
+  padding: 13px 0;
+  margin-bottom: 24px;
+  border-radius: 5px;
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+
+  color: #FFFFFF;
+  background-color: #10100E;
+  cursor: pointer;
+}
+
+.body__card-price {
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 80px 0 60px;
+  }
+
+  .info {
+    padding: 0 24px;
+  }
+
+  .info__title {
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -0.01em;
+  }
+
+  .body {
+    width: 100%;
+    padding: 32px 24px 43px;
+    overflow-y: visible;
+  }
+
+  .body__card {
+    max-width: 360px;
+    padding: 32px 24px;
+    border-radius: 8px;
+  }
+
+  .body__card-title {
+    padding-left: 32px;
+  
+    font-size: 22px;
+    line-height: 32px;
+  }
+  
+  .body__card-title::before {
+    height: 32px;
+    width: 32px;
+  }
+
+  .body__card-title--doctor::before {
+    background-image: url('../img/card-doctor-icon-mobile.svg');
+  }
+  
+  .body__card-title--coach::before {
+    background-image: url('../img/card-coach-icon-mobile.svg');
+  }
+  
+  .body__card-title--app::before {
+    background-image: url('../img/card-app-icon-mobile.svg');
+  }
+  
+  .body__card-title--medication::before {
+    background-image: url('../img/card-medication-icon-mobile.svg');
+  }
+  
+  .body__card-title--community::before {
+    background-image: url('../img/card-community-icon-mobile.svg');
+  }
+
+  .medication-subtitle {
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  .medication-buttons {
+    flex-wrap: wrap;
+  }
+  
+  .medication-button {
+    padding: 12px 24px 12px 6.5px;
+  
+    font-size: 12px;
+    line-height: 15px;
+  
+    border-radius: 8px;
+  }
+
+  .medication-button::after {
+    right: 6.5px;
+  }
+
+  .card-hidden {
+    display: none;
+  }
+
+  .body--doctor {
+    background-image: url('../img/river-shape-doctor-mobile.png');
+  }
+  
+  .body--coach {
+    background-image: url('../img/river-shape-coach-mobile.png');
+  }
+  
+  .body--app {
+    background-image: url('../img/river-shape-app-mobile.png');
+  }
+  
+  .body--medication {
+    background-image: url('../img/river-shape-medication-mobile.png');
+  }
+  
+  .body--community {
+    background-image: url('../img/river-shape-community-mobile.png');
+  }
+
+  .body__card-list {
+    margin-bottom: 32px;
+  }
+
+  .body__card-list-item {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}

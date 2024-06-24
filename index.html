@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Found Program</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <section class="info">
+      <h1 class="info__title">The Found Program</h1>
+
+      <p class="info__description">
+        Weight loss has a multitude of facets, so our program is tailored to give our members the best experience
+        possible.
+      </p>
+
+      <div class="info__buttons">
+        <div class="info__button info__button--doctor" id="button-doctor">
+          Doctor
+        </div>
+
+        <div class="info__button info__button--coach info__button--disabled" id="button-coach">
+          Coach
+        </div>
+
+        <div class="info__button info__button--app info__button--disabled" id="button-app">
+          App
+        </div>
+
+        <div class="info__button info__button--medication info__button--disabled" id="button-medication">
+          Medication
+        </div>
+
+        <div class="info__button info__button--community info__button--disabled" id="button-community">
+          Community
+        </div>
+      </div>
+    </section>
+
+    <section class="body body--doctor">
+      <div class="body__cards">
+        <article class="body__card" id="card-doctor">
+          <h2 class="body__card-title body__card-title--doctor">Board-certified doctors</h2>
+
+          <ul class="body__card-list">
+            <li class="body__card-list-item body__card-list-item--doctor">
+              Board-certified and specifically trained on weight loss medication
+            </li>
+
+            <li class="body__card-list-item body__card-list-item--doctor">
+              Virtual appointments, no in-person office visits required
+            </li>
+
+            <li class="body__card-list-item body__card-list-item--doctor">
+              Found doctors customize the program to your specific needs
+            </li>
+          </ul>
+
+          <button class="body__card-button" type="button">
+            Continue
+          </button>
+
+          <p class="body__card-price">Starting at $99/month</p>
+        </article>
+
+        <article class="body__card card-hidden" id="card-coach">
+          <h2 class="body__card-title body__card-title--coach">Personal health coach</h2>
+
+          <ul class="body__card-list">
+            <li class="body__card-list-item body__card-list-item--coach">
+              Coaches tailor your movement and nutrition plan to fit your needs
+            </li>
+
+            <li class="body__card-list-item body__card-list-item--coach">
+              On-demand availability to answer all of your questions
+            </li>
+
+            <li class="body__card-list-item body__card-list-item--coach">
+              Build sustainable habits with the help of your coach
+            </li>
+          </ul>
+
+          <button class="body__card-button" type="button">
+            Continue
+          </button>
+
+          <p class="body__card-price">Starting at $99/month</p>
+        </article>
+
+        <article class="body__card card-hidden" id="card-app">
+          <h2 class="body__card-title body__card-title--app">Found mobile app</h2>
+
+          <ul class="body__card-list">
+            <li class="body__card-list-item body__card-list-item--app">
+              Keep track of your progress by logging your routines
+            </li>
+
+            <li class="body__card-list-item body__card-list-item--app">
+              Coaches use logged routines to personalize your weight loss program
+            </li>
+
+            <li class="body__card-list-item body__card-list-item--app">
+              Integrates with Apple Health and Google Fit
+            </li>
+          </ul>
+
+          <button class="body__card-button" type="button">
+            Continue
+          </button>
+
+          <p class="body__card-price">Starting at $99/month</p>
+        </article>
+
+        <article class="body__card card-hidden" id="card-medication">
+          <h2 class="body__card-title body__card-title--medication">Prescription medication</h2>
+
+          <p class="medication-subtitle">
+            Our medical team provides access to the widest set of prescriptions on the market, including (but not limited to):
+          </p>
+
+          <div class="medication-buttons">
+            <div class="medication-button">Phentermine</div>
+            <div class="medication-button">GLP-1</div>
+            <div class="medication-button">Metformin</div>
+          </div>
+
+          <ul class="body__card-list">
+            <li class="body__card-list-item body__card-list-item--medication">
+              Work directly with our doctors to find the medication right for you
+            </li>
+
+            <li class="body__card-list-item body__card-list-item--medication">
+              Medication delivered to your door
+            </li>
+
+            <li class="body__card-list-item body__card-list-item--medication">
+              No insurance requirements
+            </li>
+          </ul>
+
+          <button class="body__card-button" type="button">
+            Continue
+          </button>
+
+          <p class="body__card-price">Starting at $99/month</p>
+        </article>
+
+        <article class="body__card card-hidden" id="card-community">
+          <h2 class="body__card-title body__card-title--community">Supportive community</h2>
+
+          <ul class="body__card-list">
+            <li class="body__card-list-item body__card-list-item--community">
+              Celebrate your journey with thousands of other members
+            </li>
+
+            <li class="body__card-list-item body__card-list-item--community">
+              Share recipes, weight loss milestones, and roadblocks
+            </li>
+
+            <li class="body__card-list-item body__card-list-item--community">
+              The Found team is actively involved to make sure you have the best experience
+            </li>
+          </ul>
+
+          <button class="body__card-button" type="button">
+            Continue
+          </button>
+
+          <p class="body__card-price">Starting at $99/month</p>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <script src="./scripts/main.js"></script>
+</body>
+
+</html>
